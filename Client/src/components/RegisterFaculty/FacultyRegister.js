@@ -2,8 +2,10 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./facultyRegister.css";
 import Sidebar from "../sidebar/sidebar";
+import { useNavigate } from "react-router-dom";
 
 function FacultyRegister() {
+  const navigate = useNavigate();
   const [finalDataFaculty, setFinalDataFaculty] = useState({
     id: "",
     password: "",
@@ -19,6 +21,7 @@ function FacultyRegister() {
       .post("http://localhost:5000/faculties", finalDataFaculty)
       .then((res) => {
         console.log(res.data, "data received");
+        navigate('/Home')
       })
       .catch((err) => {
         console.log(err);

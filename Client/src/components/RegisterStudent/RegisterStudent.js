@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./RegisterStudent.css";
 import Sidebar from "../sidebar/sidebar";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function RegisterStudent() {
+  const navigate = useNavigate();
   const [finalData, setFinalData] = useState({
     name: "",
     s_id: "",
@@ -17,9 +19,11 @@ function RegisterStudent() {
       .post("http://localhost:5000/students", finalData)
       .then((res) => {
         console.log(res.data, "data sent success");
+        navigate('/Home')
       })
       .catch((err) => {
         console.log("Flg", err);
+        
       });
   }
   return (

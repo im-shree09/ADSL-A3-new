@@ -2,8 +2,10 @@ import axios from "axios";
 import React, { useState } from "react";
 import Sidebar from "../sidebar/sidebar";
 import "./NewDepartment.css";
+import { useNavigate } from "react-router-dom";
 
 function NewDepartment() {
+  const navigate = useNavigate();
   const [finalData, setFinalData] = useState({
     dept_name: "",
     budget: "",
@@ -16,6 +18,7 @@ function NewDepartment() {
       .post("http://localhost:5000/departments", finalData)
       .then((res) => {
         console.log(res.data, "data received sucess");
+        navigate('/Home')
       })
       .catch((err) => {
         console.log(err);
