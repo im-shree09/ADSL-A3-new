@@ -4,8 +4,8 @@ function Landing() {
     return (
         <div>
             <div style={{ float: "right", padding: "5px" }}>
-                <button style={{ margin: "7px", backgroundColor: "white", color: "white", borderRadius: "5px" }}><a href="/studentLogin"> Student login</a></button>
-                <button style={{ margin: "7px", backgroundColor: "white", color: "white", borderRadius: "5px" }}><a href="/instructorLogin"> Instructor login</a></button>
+                <button style={{ margin: "7px", backgroundColor: "white", color: "white", borderRadius: "5px" }}><a href="/studentLogin">Login</a></button>
+                {/* <button style={{ margin: "7px", backgroundColor: "white", color: "white", borderRadius: "5px" }}><a href="/instructorLogin"> Instructor login</a></button> */}
 
             </div>
             <h1 style={{ textAlign: "center", paddingTop: "70px" }}>Welcome to Walchand College Of Engineering</h1>

@@ -25,28 +25,38 @@ function Sidebar() {
         <a href="/RegisterStudent" class="w3-bar-item w3-button">
           Register Student
         </a>
+        {sessionStorage.getItem('role') === 'admin' &&
         <a href="/FacultyRegister" class="w3-bar-item w3-button">
           Register Faculty
         </a>
+        }
+        
         <a href="/NewCourse" class="w3-bar-item w3-button">
           Add New Course
         </a>
+        {sessionStorage.getItem('role') === 'admin' &&
         <a href="/NewDepartment" class="w3-bar-item w3-button">
           Add New Department
         </a>
+        }
 
         <a href="/AllStudents" class="w3-bar-item w3-button">
           All Student Records
         </a>
+        {sessionStorage.getItem('role') === 'admin' &&
+
         <a href="/AllFaculty" class="w3-bar-item w3-button">
           All Faculty Records
         </a>
+        }
         <a href="/ViewCourses" class="w3-bar-item w3-button">
           All Courses
         </a>
+        {sessionStorage.getItem('role') === 'admin' &&
         <a href="/ViewDepartments" class="w3-bar-item w3-button">
           All Departments
         </a>
+        }
         <a href="/" class="w3-bar-item w3-button">
           Logout
         </a>

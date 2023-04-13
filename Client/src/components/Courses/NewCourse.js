@@ -2,7 +2,10 @@ import axios from "axios";
 import React, { useState } from "react";
 import Sidebar from "../sidebar/sidebar";
 import "./NewCourse.css";
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function NewCourse() {
+  const navigate = useNavigate();
   const [finalData, setFinalData] = useState({
     course_id: "",
     title: "",
@@ -15,6 +18,7 @@ function NewCourse() {
       .post("http://localhost:5000/courses", finalData)
       .then((res) => {
         console.log(res.data, "data received sucess");
+        navigate('/Home')
       })
       .catch((err) => {
         console.log(err);
