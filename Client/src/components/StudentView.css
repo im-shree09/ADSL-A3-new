@@ -1,0 +1,25 @@
+.StudentViewCss table {
+  border-collapse: collapse;
+  /* border-style: solid; */
+  /* background-color: #c0eec0; */
+  background-color: rgb(78, 117, 235);
+  width: 50%;
+}
+
+.StudentViewCss td {
+  border-style: solid;
+  text-align: center;
+  border-color: white;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.StudentViewCssHeader {
+  padding: 10px;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  /* background-color: #63f163; */
+  background-color: rgb(94, 214, 24);
+  color: white;
+}

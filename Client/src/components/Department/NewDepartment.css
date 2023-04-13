@@ -1,0 +1,24 @@
+.newDepartment {
+  text-align: center;
+  border: 2px solid rgb(85, 233, 109);
+  border-radius: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.newDepartmentH3 {
+  display: inline-block;
+  width: 170px;
+  text-align: left;
+}
+.newDepartmentButton {
+  background-color: rgb(85, 233, 109);
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+}
+.newDepartmentButton:hover {
+  background-color: rgb(186, 231, 186);
+}

@@ -1,0 +1,24 @@
+.studentRegister {
+  text-align: center;
+  border: 2px solid rgb(85, 97, 233);
+  border-radius: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.studentH3 {
+  display: inline-block;
+  width: 170px;
+  text-align: left;
+}
+.registerButton {
+  background-color: rgb(85, 92, 233);
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+}
+.registerButton:hover {
+  background-color: rgb(186, 189, 231);
+}

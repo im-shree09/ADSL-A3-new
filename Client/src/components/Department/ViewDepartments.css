@@ -1,0 +1,24 @@
+.ViewDepartmentCss table {
+  border-collapse: collapse;
+  /* border-style: solid; */
+  /* background-color: #c0eec0; */
+  background-color: rgb(179, 214, 214);
+}
+
+.ViewDepartmentCss td {
+  border-style: solid;
+  text-align: center;
+  border-color: white;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.ViewDepartmentCssHeader td {
+  padding: 10px;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  /* background-color: #63f163; */
+  background-color: teal;
+  color: white;
+}

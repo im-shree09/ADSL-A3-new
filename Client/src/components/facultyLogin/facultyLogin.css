@@ -1,0 +1,25 @@
+.facultyLogin{
+     text-align: center;
+    border-style: solid;
+    margin-left: 35%;
+    margin-right:35%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.facultyLoginH3 {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+.facultyLoginButton{
+    background-color:rgb(35, 226, 35);
+    width: 100px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.facultyLoginButton:hover {
+    background-color: rgb(186, 231, 186);
+}
